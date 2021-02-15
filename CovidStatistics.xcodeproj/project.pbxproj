@@ -3,27 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2375FFE25D9CE2A00D9E97E /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2375FFD25D9CE2A00D9E97E /* item.swift */; };
+		F237600325D9CED600D9E97E /* Gloss in Frameworks */ = {isa = PBXBuildFile; productRef = F237600225D9CED600D9E97E /* Gloss */; };
 		F2F6EAE525D9A31B0041A626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6EAE425D9A31B0041A626 /* AppDelegate.swift */; };
 		F2F6EAE725D9A31B0041A626 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6EAE625D9A31B0041A626 /* SceneDelegate.swift */; };
-		F2F6EAE925D9A31B0041A626 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6EAE825D9A31B0041A626 /* ViewController.swift */; };
+		F2F6EAE925D9A31B0041A626 /* statisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6EAE825D9A31B0041A626 /* statisticsViewController.swift */; };
 		F2F6EAEC25D9A31B0041A626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F6EAEA25D9A31B0041A626 /* Main.storyboard */; };
 		F2F6EAEE25D9A31B0041A626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2F6EAED25D9A31B0041A626 /* Assets.xcassets */; };
 		F2F6EAF125D9A31B0041A626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F6EAEF25D9A31B0041A626 /* LaunchScreen.storyboard */; };
+		F2F6EB0125D9C8FC0041A626 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6EB0025D9C8FC0041A626 /* detailViewController.swift */; };
+		F2F6EB0425D9C9130041A626 /* webViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6EB0325D9C9130041A626 /* webViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F2375FFD25D9CE2A00D9E97E /* item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
 		F2F6EAE125D9A31B0041A626 /* CovidStatistics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidStatistics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F6EAE425D9A31B0041A626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2F6EAE625D9A31B0041A626 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F2F6EAE825D9A31B0041A626 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2F6EAE825D9A31B0041A626 /* statisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statisticsViewController.swift; sourceTree = "<group>"; };
 		F2F6EAEB25D9A31B0041A626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2F6EAED25D9A31B0041A626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2F6EAF025D9A31B0041A626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2F6EAF225D9A31B0041A626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2F6EB0025D9C8FC0041A626 /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
+		F2F6EB0325D9C9130041A626 /* webViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +38,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F237600325D9CED600D9E97E /* Gloss in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F2375FFC25D9CE1C00D9E97E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2375FFD25D9CE2A00D9E97E /* item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F2F6EAD825D9A31B0041A626 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +72,42 @@
 		F2F6EAE325D9A31B0041A626 /* CovidStatistics */ = {
 			isa = PBXGroup;
 			children = (
-				F2F6EAE425D9A31B0041A626 /* AppDelegate.swift */,
-				F2F6EAE625D9A31B0041A626 /* SceneDelegate.swift */,
-				F2F6EAE825D9A31B0041A626 /* ViewController.swift */,
-				F2F6EAEA25D9A31B0041A626 /* Main.storyboard */,
+				F2375FFC25D9CE1C00D9E97E /* Model */,
+				F2F6EAF925D9A6440041A626 /* AppDelegate */,
+				F2F6EAFB25D9A6530041A626 /* Controller */,
+				F2F6EAFD25D9A6670041A626 /* View */,
 				F2F6EAED25D9A31B0041A626 /* Assets.xcassets */,
-				F2F6EAEF25D9A31B0041A626 /* LaunchScreen.storyboard */,
 				F2F6EAF225D9A31B0041A626 /* Info.plist */,
 			);
 			path = CovidStatistics;
+			sourceTree = "<group>";
+		};
+		F2F6EAF925D9A6440041A626 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F2F6EAE425D9A31B0041A626 /* AppDelegate.swift */,
+				F2F6EAE625D9A31B0041A626 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F2F6EAFB25D9A6530041A626 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F2F6EAE825D9A31B0041A626 /* statisticsViewController.swift */,
+				F2F6EB0025D9C8FC0041A626 /* detailViewController.swift */,
+				F2F6EB0325D9C9130041A626 /* webViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F2F6EAFD25D9A6670041A626 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2F6EAEA25D9A31B0041A626 /* Main.storyboard */,
+				F2F6EAEF25D9A31B0041A626 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +126,9 @@
 			dependencies = (
 			);
 			name = CovidStatistics;
+			packageProductDependencies = (
+				F237600225D9CED600D9E97E /* Gloss */,
+			);
 			productName = CovidStatistics;
 			productReference = F2F6EAE125D9A31B0041A626 /* CovidStatistics.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +156,9 @@
 				Base,
 			);
 			mainGroup = F2F6EAD825D9A31B0041A626;
+			packageReferences = (
+				F237600125D9CED600D9E97E /* XCRemoteSwiftPackageReference "Gloss" */,
+			);
 			productRefGroup = F2F6EAE225D9A31B0041A626 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2F6EAE925D9A31B0041A626 /* ViewController.swift in Sources */,
+				F2F6EB0425D9C9130041A626 /* webViewController.swift in Sources */,
+				F2F6EAE925D9A31B0041A626 /* statisticsViewController.swift in Sources */,
 				F2F6EAE525D9A31B0041A626 /* AppDelegate.swift in Sources */,
 				F2F6EAE725D9A31B0041A626 /* SceneDelegate.swift in Sources */,
+				F2375FFE25D9CE2A00D9E97E /* item.swift in Sources */,
+				F2F6EB0125D9C8FC0041A626 /* detailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +393,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F237600125D9CED600D9E97E /* XCRemoteSwiftPackageReference "Gloss" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hkellaway/Gloss.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F237600225D9CED600D9E97E /* Gloss */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F237600125D9CED600D9E97E /* XCRemoteSwiftPackageReference "Gloss" */;
+			productName = Gloss;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F2F6EAD925D9A31B0041A626 /* Project object */;
 }
